@@ -1,5 +1,8 @@
 package com.thoughtworks.rich;
 
+import com.thoughtworks.rich.command.Game;
+import com.thoughtworks.rich.component.gameroute.Creater;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Administrator
@@ -10,7 +13,7 @@ package com.thoughtworks.rich;
 public class Rich {
     public static void main(String[] arg){
         Game game = new Game();
-        game.setMap(MapCreater.getCompleteMap());
+        game.setElement(Creater.getCompleteMap());
         game.startPlay();
     }
 }
